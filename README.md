@@ -30,7 +30,7 @@ The framework provides various assertion methods:
 
 1. **Equality Assertion**
    ```java
-   Assertions.assertEquals(expected, actual);
+   Assertions.assertEquals(actual, expected);
    ```
    Checks if two values are equal.
 
