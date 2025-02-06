@@ -11,22 +11,19 @@ public class BinarySearchTests {
     private static int failedTests = 0;
 
     public static void runTests() {
-        System.out.println("Binary Search test cases: ");
+        System.out.println("\nBinary Search test cases: ");
         testBinarySearch(new int[]{1, 3, 5, 7, 9, 11}, 5, 2);
         testBinarySearch(new int[]{1, 3, 5, 7, 9, 11}, 4, -1);
         testBinarySearch(new int[]{1, 3, 5, 7, 9, 11}, 4, 1);
         
-        System.out.println();
-
         testBinarySearch(new char[]{'a', 'c', 'e', 'g', 'i', 'k'}, 'c', 1);
         testBinarySearch(new char[]{'a', 'c', 'e', 'g', 'i', 'k'}, 'd', -1);
-
-        System.out.println();
 
         testBinarySearch(new float[]{1.1f, 2.2f, 3.3f, 4.4f, 5.5f}, 4.4f, 3);
         testBinarySearch(new float[]{1.1f, 2.2f, 3.3f, 4.4f, 5.5f}, 6.6f, -1);
 
-        System.out.println("\nTotal Passed Tests: " + passedTests);
+        System.out.println("\nTest Summary:");
+        System.out.println("Total Passed Tests: " + passedTests);
         System.out.println("Total Failed Tests: " + failedTests);
     }
 

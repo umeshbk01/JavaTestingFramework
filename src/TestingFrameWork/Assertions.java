@@ -17,4 +17,9 @@ public class Assertions {
         return new NotNullAssertion().assertCondition(actual, null);
     }
 
+    public static AssertionResult assertException(Runnable actual, Class<? extends Throwable> expected){
+        return new ExceptionAssertion().assertCondition(actual, expected);
+    }
+
+
 }

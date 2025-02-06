@@ -8,15 +8,14 @@ public class PrefixCount {
         }
 
         int minLength = Math.min(str1.length(), str2.length());
-
         for (int i = 0; i < minLength; i++) {
             if (str1.charAt(i) != str2.charAt(i)) {
                 return i; // Mismatch found at index i
             }
         }
 
-        // If one string is a prefix of the other
-        if (str1.length() == minLength || str2.length() == minLength) {
+        // If one string is a prefix of the other only if minLength is not 0
+        if (minLength!=0 && (str1.length() == minLength || str2.length() == minLength)) {
             return -1; // One string is a complete prefix of the other
         }
 
